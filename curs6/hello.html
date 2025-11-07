@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            /*proprietate: valoare;*/
+            color: blue;
+            font-size: 18px;
+            background: color #5de3c7;
+            /*background-color: rgb(93, 227, 199);*/
+
+        }
+
+        li {
+            text-decoration: underline;
+            letter-spacing: 1.5px;
+            color: brown;
+        }
+
+        #task-uri {
+            background-color: lightgreen;
+        }
+    </style> <!--nu merge in body sa pun acest tag style-->
+</head>
+
+<body>
+    <h1 style="color: brown;">Buna ziua!</h1>
+    <p>Lorem ipsum dolor sit <b>amet</b> consectetur adipisicing elit. </p>
+    <p class="special">Natus sapiente ea voluptates officiis ullam cupiditate vel ad et rem dicta, provident, voluptatum, aperiam
+        asperiores eius neque esse <b>velit</b> quasi delectus! </p>
+    <h2>Liste</h2>
+    <section>
+        <h2>Task-uri de efectuat</h2>
+        <!--ordered list/unordered list/description list-->
+        <ul id="task-uri">
+            <li style="color: rgb(255,255,255);">Gatit mic dejun</li>
+            <li style="color: #ffffff;">Plimbat caine</li> <!--stil inline-->
+            <li class="taiat">Spalat vase</li>
+
+            <article> <!-- article il are parinte pe section, iar h2 are design ca h2 din section-->
+                <h2>TVA creste la 23% din ianuarie</h2>
+                <p>Incepand cu 1 ianuarie, TVA-ul va creste la 23% pentru toate produsele si serviciile.</p>
+            </article>
+        </ul>
+    </section>
+    <section>
+
+
+        <h2>Plati de facut</h2>
+        <ul>
+            <li class="taiat">Intretinere</li>
+            <li class="taiat">Telefon</li>
+            <li>Internet</li>
+        </ul>
+    </section>
+</body>
+
+</html>
+<!--- id apare doar o singura data in pagina,  iar class de cate ori vreau --->

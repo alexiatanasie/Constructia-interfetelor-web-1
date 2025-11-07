@@ -1,0 +1,44 @@
+h2 {
+    /*selector*/
+    color: hotpink;
+}
+
+.taiat {
+    /*selector de clasa*/
+    text-decoration: line-through;
+    background-color: lightgrey;
+}
+
+section h2 {
+    /*h2 care se afla in section */
+    background-color: yellow;
+}
+
+section>h2 {
+    /*tag-urile h2 care sunt copii, NU stranepoti, ai lui section*/
+    background-color: orange;
+    font-size: 36px;
+}
+
+.special>b {
+    /*selector de clasa*/
+    font-weight: normal;
+    /*anuleaza bold ul scris in html*/
+    color: purple;
+
+}
+
+/* testat de mine h2 din article ca sa nu mai facem section > h2 
+article h2{
+    background-color: black;
+}
+    */
+h1, section > h2 {
+ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+/* virgula inseamna si 
+> inseamna copil 
+spatiu inseamna parinte - mostenitor
+. clasa
+# id*/
