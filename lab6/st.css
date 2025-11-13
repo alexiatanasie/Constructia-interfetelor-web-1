@@ -1,0 +1,14 @@
+article p{
+    color:yellowgreen;
+
+}
+p{
+    color: black;
+}
+.card{
+     border: 1px solid black;
+     background-color:aliceblue;
+}
+.card h2{
+    text-align: center;
+}

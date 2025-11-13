@@ -1,0 +1,21 @@
+p{
+    color:blue;
+    font-family: Arial;
+    text-align: center;
+}
+.intro {
+    color: green;
+}
+.info{
+    color:grey;
+    font-style: italic;
+}
+.warning{
+    color: red;
+    font-weight: bold;
+}
+#title{
+    text-align: center;
+    color: purple;
+    background-color: beige;
+}
