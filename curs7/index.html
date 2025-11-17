@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY</title>
+    <style>
+        #title {
+
+            background-color: lightblue;
+            height: 100px;
+            /*dimensiune absoluta*/
+            width: 100px;
+            float: right;
+            margin: 0;
+        }
+
+        #parag1 {
+            background-color: lightsalmon;
+            height: 80px;
+            width: 70%;
+            /*dimensiune relativa*/
+            float: left;
+            margin: 0;
+        }
+
+        #parag1 b {
+            width: 200px;
+            display: inline-block;
+
+        }
+        p span{
+            color:burlywood;
+            font-size: 24px;
+            width: 120px;
+            height: 50px;
+            display: inline-block;
+            background:blue;;
+        }
+
+        .secret-discret {
+            display: none;
+        }
+        /*elem de tip display inline nu au width si height*/
+        /*sageata e copil direct , sa nu mai fie alte tag-uri intermediare intre ele*/
+    </style>
+</head>
+
+<body>
+    <h1 id="title">CSS DISPLAY</h1>
+    <div>
+        <p id="parag1"> lorem ipsum <b>mama</b></p>
+    </div>
+
+    <p style="clear: both;">mamma mama mia ma</p>
+    <h2>unde vreau sa merg: </h2>
+    <i>tenerife </i>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+    <u>canarie</u>
+
+    <p>bine ai venit pe luna! <a
+            href="https://www.bing.com/images/search?view=detailV2&ccid=MNDvKBjC&id=B4321429696E40C413DC00E1E2999E63B2DADBE9&thid=OIP.MNDvKBjCKu6i2y4aAlt3zgHaFj&mediaurl=https%3a%2f%2fmisistemasolar.com%2fwp-content%2fuploads%2f2017%2f10%2fluna-1024x768.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.30d0ef2818c22aeea2db2e1a025b77ce%3frik%3d6dvasmOemeLhAA%26pid%3dImgRaw%26r%3d0&exph=768&expw=1024&q=luna&FORM=IRPRST&ck=EAE5E1607B10FBD2045A1A708664C984&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0">click
+            aici </a>ca sa vezi luna</p>
+
+<p>admira poza cu Luna: <img src="https://picsum.photos/id/237/200/300"></p>
+<p>imi e dor de miguel & <span>tomitza. </span> <span> de craciun</span> ii fac spiridusi</p>
+
+<!-- span e un tag care nu face nimic -->
+ <h2>Fructe preferate   </h2>
+ <!--  ordered list -->
+ <ol>
+    <li>mere</li>
+    <li>pere</li>
+    <li>prune</li>
+ </ol>
+ <p class="secret-discret">secret discret</p>
+</body>
+
+</html>
