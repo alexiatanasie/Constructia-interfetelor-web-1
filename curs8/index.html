@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectori avansati de css</title>
+    <style>
+        p.secret {
+            /*paragrafele care au cls secret*/
+            display: none;
+        }
+
+        h2.aldoilea {
+            color: red;
+        }
+
+        div .aldoilea {
+            background-color: aquamarine;
+        }
+
+        input {
+            border: 2px solid black;
+        }
+
+        /* [type]{
+            border: 2px solid greenyellow;
+            background-color: lightslategray;
+        } */
+        [type^="password"],
+        [type^="email"] {
+            /* nu inteleg ce fac caciulile astea
+            [] in css inseamna atribut*/
+            border: 2px solid greenyellow;
+            background-color: lightslategray;
+        }
+
+        [href^="https"] {
+            background-color: lightgray;
+            font-size: 22px;
+        }
+
+        a:hover {
+            /*hover inseamna pt mouse deasupra lui
+            pseudo selector inseamna doua puncte */
+            font-weight: bold;
+        }
+
+        input:focus {
+
+            /*focus este actovat cand eu ajung pe un element navigat din tastatura*/
+            background-color: lightsalmon;
+        }
+
+        a:visited {
+            /*link urile care au fost vizitate*/
+            font-style: italic;
+            color: purple;
+        }
+
+        a:active {
+            /*pt link uri dupa ce dau clik pe ele, e pseudo selector*/
+            background-color: yellow;
+        }
+        li:first-child{
+            background-color: lightslategray;
+        }
+        li:last-child{
+            background-color: lightcoral;
+        }
+        li:nth-child(6){
+            background-color: lightgreen;
+        }
+        li:nth-child(odd){
+            background-color: lightblue;
+        }
+        li:nth-child(even){
+            background-color: lightpink;
+            font-size: 1.5em;
+        }
+        ol::before{ /* inainte tab urilor sa scriem continutul asta */
+            content: "inca o lista:";
+            font-size: 3em;
+        }
+        ol::after{
+            content: "8888888";
+            font-size: 2.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Buna ziua</p>
+    <p class="secret">Acest text este ascuns</p>
+    <!---->
+    <div>
+        <h2 class="aldoilea">Descriere sectiune</h2>
+        <p>Paragraf 1</p>
+        <p class="aldoilea">Paragraf 2</p>
+
+    </div>
+
+    <h2>Alt titlu de sectiune</h2>
+
+    <form>
+        Nume:<input><br> <!--br e ca sa treca ape urm rand-->
+        Password:<input type="password"><br>
+        Email:<input type="email"><br>
+        <input type="checkbox">Sunt de acord<br>
+        <button>Inregistreaza-te</button>
+    </form>
+    <a href="https://emag.ro">Emag</a><br>
+    <a href="index.html">Acasa</a>
+    <ol>
+        <li class="bucuresti">Bucuresti</li>
+        <li>Cluj</li>
+        <li>Ramnicu Valcea</li>
+        <li>Dubai</li>
+        <li>Tokyo</li>
+        <li>New York</li>   
+        <li>Paris</li>  
+        <li>London</li>
+    </ol>
+</body>
+
+</html>
