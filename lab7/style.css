@@ -1,0 +1,61 @@
+.social{
+    display: block;
+}
+
+.menu li {
+    display: inline-block; 
+    background: #e46767;
+    padding: 3px 40px;
+    margin: 3px;
+}
+
+.menu li.special {
+    background: #45d5c4;
+}
+#id1{
+    display: inline; 
+    background-color: aquamarine;
+}
+#id2{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background-color: brown;
+}
+#id3{
+    background-color: darkgoldenrod;
+    display: block;
+}
+.card {
+    width: 300px;
+    background: white;
+}
+
+.nume {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.imagine{
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+.imagine img{
+    width: 50%;
+}
+.grupa, .contact-btn {
+    display: inline-block;
+    width: 120px;
+}
+
+.grupa {
+    background: #d38282;
+}
+
+.contact-btn {
+    background: #1370bc;
+    border: none;
+    cursor: pointer;
+}
