@@ -1,0 +1,50 @@
+.container p {
+    color: red;
+}
+
+.container>p {
+    font-weight: bold;
+    color: brown
+}
+
+.container>p+p {
+    color: chartreuse;
+    font-style: oblique;
+}
+
+input:required {
+    border: 1px solid red;
+}
+
+a[href$=".pdf"] {
+    background-color: rgb(149, 215, 149);
+}
+
+a[href^="https"] {
+
+    background-color: aqua;
+}
+li:nth-child(odd) {
+    background-color: lightgray;
+}
+li:nth-child(even) {
+   color: rgb(17, 82, 104);
+}
+li:hover{
+    font-weight: lighter;
+}
+
+
+
+.ex4 p::before{
+   content: "^";
+}
+.ex4 p::after{
+   content: "^";
+}
+.ex4 p::first-letter{
+    font-size: 36px;
+}
+.ex4 p::first-line{
+    font-weight: bold;
+}
